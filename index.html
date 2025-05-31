@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ICTAZ MU Chapter Voting</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>ICTAZ-MU Voting</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>ICTAZ MU Chapter - Vote Now</h1>
-    <p>Select your candidate for President</p>
-    <div class="candidates">
-      <div class="card" onclick="castVote('Christopher Mumba')">
-        <img src="chris.jpg" alt="Christopher Mumba" />
-        <h2>Christopher Mumba</h2>
-      </div>
-      <div class="card" onclick="castVote('David Chinga')">
-        <img src="david.jpg" alt="David Chinga" />
-        <h2>David Chinga</h2>
-      </div>
-    </div>
-    <div class="result" id="result"></div>
+    <h1>Vote for ICTAZ-MU Chapter Representative</h1>
+    <form id="vote-form">
+      <label>
+        <input type="radio" name="candidate" value="Christopher Mumba" required>
+        Christopher Mumba
+      </label><br>
+      <label>
+        <input type="radio" name="candidate" value="David Chinga" required>
+        David Chinga
+      </label><br><br>
+      <button type="submit">Submit Vote</button>
+    </form>
   </div>
   <script src="script.js"></script>
 </body>
